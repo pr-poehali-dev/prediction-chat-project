@@ -106,6 +106,19 @@ const Index = () => {
           <Icon name="Sparkles" size={22} />
           Предсказание
         </button>
+
+        <div className="mt-14 flex flex-col items-center gap-3">
+          <p className="font-hand text-lg text-muted-foreground">отсканируй и узнай судьбу</p>
+          <div className="p-3 rounded-2xl bg-white shadow-xl shadow-primary/20">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://prediction-chat-project--preview.poehali.dev/"
+              alt="QR-код на сайт ЧароКота"
+              width={180}
+              height={180}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
